@@ -383,7 +383,23 @@ footer{
       margin-top: 90%;
    }
    /*MQ NUESTROS ESPACIOS*/
-   
+   .img-espacios div {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+  }
+   .videos-espacios {
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+   }
+   /*MQ EQUIPO*/
+   .card__equipo {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 5%;
+   }
 }
 
 @media (max-width: 320px) {
