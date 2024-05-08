@@ -3,7 +3,7 @@
       margin: 0px;; /*coloque para saber si pude sacar los puntos.. y no pude*/
       padding:0;
    /* Declaramos una tipografía para TODO */
-      font-family: "Merienda", sans-serif;
+      font-family: "lora", sans-serif;
    /* Declaramos un font-size base */
       font-size: 14px;
 }
@@ -304,11 +304,24 @@ footer{
 }
 
 /*ESTILANDO "QUIENES SOMOS"*/
-.encabezado-quien-es img{
-   width: 60px; /* Esto va muy pequeño arriba del título acompañándolo como un icono asociado*/
+.img-qs img{
+   width: 45px; 
 }
+/*no logro que la imagen quede al centro*/
+.titulo-extra ul li{
+   text-align: center;
+   text-decoration: none; 
+}
+/*no se sale el punto*/
 
 /*ESTILANDO "DIRIGIDO A"*/
+.row h1{
+   display: flex;
+   justify-content: center;
+   margin-top: 5%;
+   margin-bottom: 5%;
+   font-family: "Merienda", cursive;
+}
 
 /*MEDIA QUERIS*/
 
@@ -369,7 +382,10 @@ footer{
    .grid-1 {
       margin-top: 90%;
    }
+   /*MQ NUESTROS ESPACIOS*/
+   
 }
+
 @media (max-width: 320px) {
      /*MENU*/
    .contenedor__flex__menu {

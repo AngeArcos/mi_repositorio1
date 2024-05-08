@@ -3,13 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Mis estilos-->
-    <link rel="stylesheet" href="../css/style.css">
     <!-- Google fonts-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Merienda:wght@300..900&display=swap" rel="stylesheet">   
-    <title>Document</title>
+    <!--Boostrap(BS)-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!--Mis estilos-->
+    <link rel="stylesheet" href="../css/style.css">
+    <title>A quien esta dirigido</title>
 </head>
 <body>
     <header class="encabezado">
@@ -29,43 +31,57 @@
         </nav>
     </header> 
         <main>
-            <div>
-                <h1 class="titulo-principal-1">A quien va dirigido</h1>
-            </div>
-            <section>
-                <article class="foto-list">
-                    <img src="../assets/dirigido-a-to.jpeg" alt="foto haciendo referencia a profesion terapia ocupacional">
+            <section class="container">
+                <div class="row">
+                    <h1> A quien va dirigido</h1>
+                </div>
+                <article class="row justify-content-evenly">
+                    <div class="card col-lg-3 col-md-6 col-sm-6 col-6">
+                        <div class="row">
+                            <h2> Terapeuta Ocupacional</h2>
+                        </div>
+                        <div class="row">
+                            <p>Espaicio equipado con gimnasio terapéutico</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-6 col-sm-6 col-6">
+                        <img src="../assets/dirigido-a-to.jpeg" alt="">
+                    </div>
+                    <div class="card col-lg-3 col-md-6 col-sm-6 col-6">
+                        <div class="row">
+                            <h2> Fonoaudiología</h2>
+                        </div>
+                        <div class="row">
+                            <p>Espacio equipado con sala de juego y mesa pequeña</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-6 col-sm-6 col-6">
+                        <img src="../assets/dirigido-a-fono.jpeg" alt="">
+                    </div>
                 </article>
-                <article class="titulo-secundario">
-                    <h1>Terapeuta ocupacional</h1>
-                    <p>Espaicio equipado con gimnasio terapéutico</p>
-                </article>
-            </section>
-            <section>
-                <article class="foto-list">
-                    <img src="../assets/dirigido-a-fono.jpeg" alt="foto haciendo referencia a profesión fonoaudiología">
-                </article>
-                <article class="titulo-secundario">
-                    <h1>Fonoaudiología</h1>
-                    <p>Espacio equipado con sala de juego y mesa pequeña</p>
-                </article>
-            </section>
-            <section>
-                <article class="titulo-secundario">
-                    <h1>Psicología</h1>
-                    <p>Espacio cómodo equipado con sillon y mesa</p>
-                </article>
-                <article class="foto-list">
-                    <img src="../assets/dirigido-a-psicologo.jpeg" alt="foto haciendo referencia a profesión psicología">
-                </article>
-            </section>
-            <section>
-                <article class="titulo-secundario">
-                    <h1>Otros profesionales</h1>
-                    <p>También pueden trabajar en nuestros espacios educadoras diferenciales, psicopedagogas, kinesiólogos u otros.</p>
-                </article>
-                <article class="foto-list">
-                    <img src="../assets/dirigido-a-otros.jpeg" alt="foto haciendo referencia a otras profesiones">
+                <article class="row justify-content-evenly">
+                    <div class="card col-lg-3 col-md-6 col-sm-6 col-6">
+                        <img src="../assets/dirigido-a-psicologo.jpeg" alt="">
+                    </div>
+                    <div class="card col-lg-3 col-md-6 col-sm-6 col-6">
+                        <div class="row">
+                            <h2>Psicólogos</h2>
+                        </div>
+                        <div class="row">
+                            <p>Espacio cómodo equipado con sillon y mesa</p>
+                        </div>
+                    </div>
+                    <div class="card col-lg-3 col-md-6 col-sm-6 col-6">
+                        <img src="../assets/dirigido-a-otros.jpeg" alt="">
+                    </div>
+                    <div class="card col-lg-3 col-md-6 col-sm-6 col-6">
+                        <div class="row">
+                            <h2>Otros profesionales</h2>
+                        </div>
+                        <div class="row">
+                            <p>También pueden trabajar en nuestros espacios educadoras diferenciales, psicopedagogas, kinesiólogos u otros</p>
+                        </div>
+                    </div>
                 </article>
             </section>
         </main>
@@ -79,7 +95,7 @@
                     <img src="../assets/logo-wsp-sinfondo.png" alt="logo whatsap footer">
                     <img src="../assets/Logo-insta-sinfondo.png" alt="logo instagram footer">
                     <img src="../assets/Logo-correo-sinfondo.png" alt="logo correo footer">
-                    <img src="../assets/loso facebook sin fondo.png" alt="logo facebook footer">
+                    <img src="../assets/logo_facebook_sinfondo.PNG" alt="logo facebook footer">
                 </div>
                 <div>
                     <button>Buscar</button>
