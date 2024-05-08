@@ -81,7 +81,14 @@
 .foto__list div img {
    width: 50px;
    margin-top: 5%;
-} /*no logré colocarlo al centro (sobre el bienvenidos, sin necesidad de usar margin)*/
+   border-radius: 23px;
+} 
+.foto__list div {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+/*no logré colocarlo al centro (sobre el bienvenidos, sin necesidad de usar margin)*/
 .foto__list div p{
    text-align: center;
    margin-left: 20%;
@@ -235,6 +242,7 @@ div {
    font-size: 2rem;
    margin-top: 5%;
    margin-bottom: 5%;
+   font-family: "Merienda", cursive;
    display: grid;
    justify-items: center;
 }
@@ -307,7 +315,11 @@ footer{
 .img-qs img{
    width: 45px; 
 }
-/*no logro que la imagen quede al centro*/
+.img-qs {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
 .titulo-extra ul li{
    text-align: center;
    text-decoration: none; 
@@ -351,6 +363,7 @@ footer{
    .grid-1 {
       margin-top: 60%;
    }
+   /*MQ CONTACTO falta modificar para que quede responsive*/
 }
 @media (max-width: 576px) {
      /*MENU*/
