@@ -399,12 +399,6 @@ footer {
       justify-content: center;
       align-items: center;
    }
-   /*.redes__soc button {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-   }/*ARREGLAR EL BOTON*/
-
 
    .fondo img {
       margin-top: 10%;
@@ -459,9 +453,6 @@ footer {
       margin-top: 15%;
    }
 }
-
-
-
 
 @media (max-width: 320px) {
      /*MENU*/
