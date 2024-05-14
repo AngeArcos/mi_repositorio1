@@ -202,6 +202,24 @@
   grid-template-areas: "section section" "section section";
   gap: 5px;
 }
+@media (max-width: 768px) {
+  .grid-container-contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 576px) {
+  .grid-container-contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 320px) {
+  .grid-container-contact {
+    display: flex;
+    flex-direction: column;
+  }
+}
 
 .orden-ubicacion {
   display: flex;
@@ -220,6 +238,18 @@
   width: 500px;
   border-radius: 4px;
 }
+@media (max-width: 576px) {
+  .orden-ubicacion iframe {
+    width: 90%;
+    border-radius: 4px;
+  }
+}
+@media (max-width: 320px) {
+  .orden-ubicacion iframe {
+    width: 90%;
+    border-radius: 4px;
+  }
+}
 
 .videos-espacios-1 {
   display: flex;
@@ -232,6 +262,18 @@
 }
 .videos-espacios-1 iframe {
   border-radius: 4px;
+}
+@media (max-width: 576px) {
+  .videos-espacios-1 iframe {
+    border-radius: 4px;
+    width: 90%;
+  }
+}
+@media (max-width: 320px) {
+  .videos-espacios-1 iframe {
+    border-radius: 4px;
+    width: 90%;
+  }
 }
 
 /*ESTILANDO CONTACTOS*/ /*ASIDE*/
@@ -258,6 +300,33 @@
   flex-direction: column;
   margin-left: 15%;
   margin-top: 15%;
+}
+@media (max-width: 768px) {
+  .fondo-contact {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-top: 15%;
+  }
+}
+@media (max-width: 576px) {
+  .fondo-contact {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-top: 15%;
+  }
+}
+@media (max-width: 320px) {
+  .fondo-contact {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin-left: 0px;
+    margin-top: 15%;
+  }
 }
 
 /*ESTILANDO "NUESTROS ESPACIOS"*/ /*MAIN*/

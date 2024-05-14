@@ -199,6 +199,21 @@ $font: "lora", sans-serif;
     "section section"
     "section section";
     gap: 5px;
+
+    @media (max-width: map-get($breakpoints, laptop)) {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    @media (max-width: map-get($breakpoints, tablet)) {
+        display: flex;
+        flex-direction: column;
+    }
+
+    @media (max-width: map-get($breakpoints, phone)) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 .orden-ubicacion{
     display: flex;
@@ -215,6 +230,16 @@ $font: "lora", sans-serif;
     iframe {
         width: 500px;
         border-radius: 4px; 
+        
+        @media (max-width: map-get($breakpoints, tablet)) {
+            width: 90%;
+            border-radius: 4px; 
+        }
+    
+        @media (max-width: map-get($breakpoints, phone)) {
+            width: 90%;
+            border-radius: 4px; 
+        }
     }
 }
 .videos-espacios-1 {
@@ -227,6 +252,16 @@ $font: "lora", sans-serif;
     }
     iframe {
         border-radius: 4px; 
+
+        @media (max-width: map-get($breakpoints, tablet)) {
+            border-radius: 4px;
+            width: 90%;
+        }
+    
+        @media (max-width: map-get($breakpoints, phone)) {
+            border-radius: 4px;
+            width: 90%;
+        }
     }
  }
 
@@ -252,6 +287,30 @@ $font: "lora", sans-serif;
     flex-direction: column;
     margin-left: 15%;
     margin-top: 15%;
+
+    @media (max-width: map-get($breakpoints, laptop)) {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-top: 15%;
+    }
+    
+    @media (max-width: map-get($breakpoints, tablet)) {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-top: 15%;
+    }
+
+    @media (max-width: map-get($breakpoints, phone)) {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        margin-left: 0px;
+        margin-top: 15%;
+    }
 }
 
     /*ESTILANDO "NUESTROS ESPACIOS"*/ /*MAIN*/
