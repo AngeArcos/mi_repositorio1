@@ -1,0 +1,29 @@
+.contenedor__flex__menu {
+  @include flex-center;
+  ul {
+    @include flex-center;
+    width: 100%;
+    justify-content: space-evenly;
+  }
+
+  @include responsive(display, $breakpoints) {
+    flex-direction: column;
+  }
+}
+
+.menu__list {
+  li {
+    @include flex-center;
+    list-style-type: none;
+    margin-top: 2%;
+    a {
+      color: #000709;
+      text-decoration: none;
+    }
+  }
+
+  @include responsive(display, $breakpoints) {
+    flex-direction: row wrap;
+    flex-direction: column;
+  }
+}
