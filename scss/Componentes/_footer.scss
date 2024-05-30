@@ -1,6 +1,7 @@
 .fondo {
   background-color: $background-color;
   @include flex-center;
+  justify-content: space-around;
   margin-top: 5%;
 
   @include responsive(background-color, $breakpoints) {
@@ -39,7 +40,7 @@
 }
 
 .fondo__copyright {
-  background-color: #FDE9E1;
+  background-color: $background-color;
   @include flex-center;
   h3 {
     margin-top: 3%;

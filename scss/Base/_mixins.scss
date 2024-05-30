@@ -1,13 +1,28 @@
 @mixin flex-center {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-row {
+    flex-direction: row;
+}
+
+@mixin flex-column {
+    flex-direction: column;
+}
+
+@mixin respond-to($size) {
+    @media (max-width: map-get($breakpoints, $size)) {
+        @content;
+    }
 }
 
 @mixin responsive($property, $map) {
-  @each $label, $value in $map {
-    @media (max-width: $value) {
-      #{$property}: $label;
+    @each $label, $value in $map {
+        @media (max-width: $value) {
+            @content;
+            #{$property}: $label;
+        }
     }
-  }
 }
