@@ -1,14 +1,18 @@
 .fondo {
   background-color: $background-color;
-  @include flex-center;
+  display: flex;
+  align-items: center;
   justify-content: space-around;
   margin-top: 5%;
 
-  @include responsive(background-color, $breakpoints) {
+  @include respond-to(tablet){
     display: flex;
-    flex-direction: column;
     justify-content: space-around;
     align-items: center;
+  }
+
+  @include respond-to(mobile){
+    flex-direction: column;
   }
 
   img {
