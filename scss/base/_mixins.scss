@@ -4,6 +4,14 @@
     align-items: center;
 }
 
+@mixin flex-row {
+    flex-direction: row;
+}
+
+@mixin flex-column {
+    flex-direction: column;
+}
+
 @mixin respond-to($size) {
     @media (max-width: map-get($breakpoints, $size)) {
         @content;

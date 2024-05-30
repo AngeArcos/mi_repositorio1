@@ -1,20 +1,35 @@
-.grid-container-contact {
+.contacto {
+  .grid-container-contact {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    grid-template-areas: 
+    grid-template-areas:
       "section section"
       "section section";
     gap: 5px;
-  
-    @include responsive(display, $breakpoints) {
+
+    @media (max-width: map-get($breakpoints, laptop)) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (max-width: map-get($breakpoints, tablet)) {
+      display: flex;
+      flex-direction: column;
+    }
+
+    @media (max-width: map-get($breakpoints, phone)) {
+      display: flex;
       flex-direction: column;
     }
   }
-  
+
   .orden-ubicacion {
-    @include flex-center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 5%;
+
     a {
       font-size: 15px;
       color: black;
@@ -22,53 +37,97 @@
       margin-top: 3%;
       margin-bottom: 3%;
     }
+
     iframe {
       width: 500px;
       border-radius: 4px;
-  
-      @include responsive(width, $breakpoints) {
+
+      @media (max-width: map-get($breakpoints, tablet)) {
         width: 90%;
+        border-radius: 4px;
+      }
+
+      @media (max-width: map-get($breakpoints, phone)) {
+        width: 90%;
+        border-radius: 4px;
       }
     }
   }
-  
+
   .videos-espacios-1 {
-    @include flex-center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     margin-bottom: 5%;
+
     h3 {
       margin-bottom: 8%;
     }
+
     iframe {
       border-radius: 4px;
-  
-      @include responsive(width, $breakpoints) {
+
+      @media (max-width: map-get($breakpoints, tablet)) {
+        border-radius: 4px;
+        width: 90%;
+      }
+
+      @media (max-width: map-get($breakpoints, phone)) {
+        border-radius: 4px;
         width: 90%;
       }
     }
   }
-  
+
+  /*ESTILANDO CONTACTOS*/
+  /*ASIDE*/
   .orden-datos {
-    @include flex-center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     list-style-type: none;
   }
-  
+
   .orden-datos-row {
+    display: flex;
     flex-direction: row;
     margin-top: 5%;
     margin-bottom: 4%;
+
     li {
       margin-right: 10%;
     }
   }
-  
+
   .fondo-contact {
     width: 500px;
+    display: flex;
     flex-direction: column;
     margin-left: 15%;
     margin-top: 15%;
-  
-    @include responsive(width, $breakpoints) {
+
+    @media (max-width: map-get($breakpoints, laptop)) {
       width: 90%;
+      display: flex;
+      flex-direction: column;
       margin-left: 0px;
+      margin-top: 15%;
+    }
+
+    @media (max-width: map-get($breakpoints, tablet)) {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+      margin-top: 15%;
+    }
+
+    @media (max-width: map-get($breakpoints, phone)) {
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      margin-left: 0px;
+      margin-top: 15%;
     }
   }
+}
