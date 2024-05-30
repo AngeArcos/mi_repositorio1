@@ -520,38 +520,22 @@ footer {
 }
 
 .fondo {
-  background-color: #804D68;
+  background-color: #85C4BD;
   display: flex;
-  justify-content: center;
   align-items: center;
   justify-content: space-around;
   margin-top: 5%;
 }
-@media (max-width: 1024px) {
-  .fondo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: laptop;
-  }
-}
 @media (max-width: 768px) {
   .fondo {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
-    background-color: tablet;
   }
 }
-@media (max-width: 480px) {
+@media (max-width: ) {
   .fondo {
-    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: phone;
   }
 }
 .fondo img {
@@ -616,7 +600,7 @@ footer {
 }
 
 .fondo__copyright {
-  background-color: #804D68;
+  background-color: #85C4BD;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -627,7 +611,7 @@ footer {
 }
 
 .encabezado {
-  background-color: #804D68;
+  background-color: #85C4BD;
   top: 0px;
   position: sticky;
   opacity: 0.8;
