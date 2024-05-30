@@ -226,8 +226,15 @@ footer {
   font-family: "Merienda", cursive;
   font-size: 2rem;
   text-align: center;
-  margin-top: 5%;
   margin-bottom: 5%;
+}
+
+.container {
+  margin-bottom: 5%;
+  margin-left: 0%;
+  margin-right: 0%;
+  max-width: 100%;
+  margin-top: 0%;
 }
 
 .color__equipo {
@@ -239,6 +246,7 @@ footer {
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 5%;
+  margin-bottom: 5%;
 }
 @media (max-width: 1024px) {
   .card__equipo {
@@ -274,14 +282,26 @@ footer {
 
 .titulo-extra p {
   text-align: center;
+  color: black;
 }
 
 .titulo-abajo {
-  color: black;
   display: block;
   text-align: center;
   margin-top: 60px;
   margin-bottom: 40px;
+}
+
+.titulo-principal-1 {
+  font-family: "Merienda", cursive;
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 5%;
+  padding-top: 5%;
+}
+
+.color_fondo_1 {
+  background-color: #35666E;
 }
 
 .img-espacios div {
@@ -296,11 +316,7 @@ footer {
   }
 }
 .img-espacios img {
-  width: 20%;
-  padding-left: 15px;
-  padding-right: 15px;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  width: 50%;
 }
 
 .videos-espacios {
@@ -315,10 +331,8 @@ footer {
   }
 }
 .videos-espacios iframe {
-  width: 560px;
+  width: 50%;
   height: 315px;
-  margin-top: 40px;
-  margin-bottom: 40px;
 }
 
 .videos-de-acceso article {
@@ -327,12 +341,19 @@ footer {
   justify-content: space-evenly;
 }
 .videos-de-acceso iframe {
-  width: 20%;
+  width: 50%;
   border-radius: 10px;
-  margin-top: 30px;
-  margin-bottom: 80px;
+  padding-bottom: 5%;
 }
 
+.quienes-somos .container {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+.quienes-somos .justify-content-evenly {
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
 .quienes-somos .img-qs {
   display: flex;
   flex-direction: column;
@@ -349,6 +370,14 @@ footer {
 .quienes-somos .copyright {
   font-size: 14px;
   font-weight: bold;
+}
+
+.grid-container {
+  background-color: #EDF6F9;
+}
+
+.card {
+  background-color: #EDF6F9;
 }
 
 .titulo-principal-2 {
@@ -515,7 +544,6 @@ footer {
   font-family: "Merienda", cursive;
   font-size: 2rem;
   text-align: center;
-  margin-top: 5%;
   margin-bottom: 5%;
 }
 
@@ -524,7 +552,6 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  margin-top: 5%;
 }
 @media (max-width: 768px) {
   .fondo {
