@@ -1,0 +1,23 @@
+.quienes-somos {
+.img-qs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    img {
+        width: 45px; 
+    }
+}
+.titulo-extra {
+    ul {
+        li {
+            text-align: center;
+            text-decoration: none; 
+            list-style-type: none;
+        }
+    }
+}
+.copyright {
+    font-size: 14px; 
+    font-weight: bold;
+}
+}

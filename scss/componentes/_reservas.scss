@@ -1,0 +1,91 @@
+    .titulo-principal-2 {
+        font-size: 2rem;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        font-family: "Merienda", cursive;
+        display: grid;
+        justify-items: center;
+    
+        @include responsive(display, $breakpoints) {
+            font-size: 2rem;
+            margin-top: 2%;
+            display: grid;
+            justify-items: center;
+        }
+    }
+    .grid-1 {
+        @media (max-width: map-get($breakpoints, laptop)) {
+            margin-top: 60%;
+        }
+        
+        @media (max-width: map-get($breakpoints, tablet)) {
+            margin-top: 90%;
+        }
+    
+        @media (max-width: map-get($breakpoints, phone)) {
+            margin-top: 95%;
+        }
+     }
+    
+     /*ESTILANDO "RESERVAS"*/ /*MAIN*/
+    .img-horario-valor {
+        margin-top: 10%;
+        margin-bottom: 30%;
+        margin-left: 5%;
+        margin-right: 5%;
+    
+        @include responsive(display, $breakpoints) {
+            margin-top: 20%;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+    
+        img {
+            width: 100%;
+        }
+    }
+    .titulo-valores {
+        ul {
+            li {
+                text-align: center; 
+                list-style-type: none;
+                margin-top: 3%;
+            }
+        }
+    }
+    
+        /*ESTILANDO "RESERVAS"*/ /*ASIDE*/
+    aside {
+        grid-area: aside;
+    }
+    .titulo-extra-cotización {
+        form {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10%;
+            margin-right: 10%;
+            div {
+                display: flex;
+                flex-direction: column;
+                margin-top: 3%;
+                margin-left: 30%;
+                margin-right: 30%;
+            }
+        }
+        textarea {
+            background-color: #EDF6FA;
+        }
+        label {
+            text-align: center;  
+        }
+    }
+    .foto-secundaria-reservas {
+        img {
+            width: 100%;
+            margin-top: 10%;
+        }
+    }
+        /*ESTILANDO "RESERVAS"*/ /*FOOTER*/
+    footer {
+        grid-area: footer;
+    }
