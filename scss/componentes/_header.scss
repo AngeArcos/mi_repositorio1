@@ -3,7 +3,16 @@
   top: 0px;
   position: sticky;
   opacity: 0.8;
+
   img {
     width: 150px;
+
+  }
+
+}
+
+@media (max-width: 767px) {
+.encabezado {
+    position: static; /* Cambiar la posición sticky a static en pantallas pequeñas */
   }
 }

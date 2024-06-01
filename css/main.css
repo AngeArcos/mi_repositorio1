@@ -280,9 +280,14 @@ footer {
   position: static;
 }
 
+.card-text {
+  text-align: justify;
+}
+
 .titulo-extra p {
   text-align: center;
   color: black;
+  line-height: 1.5;
 }
 
 .titulo-abajo {
@@ -533,11 +538,12 @@ footer {
   border-radius: 23px;
 }
 .foto__list div p {
-  text-align: center;
+  text-align: justify;
   margin-left: 20%;
   margin-right: 20%;
   margin-top: 2%;
   margin-bottom: 3%;
+  line-height: 1.5;
 }
 
 .titulo-principal-1 {
@@ -647,6 +653,11 @@ footer {
   width: 150px;
 }
 
+@media (max-width: 767px) {
+  .encabezado {
+    position: static; /* Cambiar la posición sticky a static en pantallas pequeñas */
+  }
+}
 .contenedor__flex__menu {
   display: flex;
   justify-content: center;
