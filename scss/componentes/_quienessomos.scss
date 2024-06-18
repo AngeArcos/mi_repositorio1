@@ -3,10 +3,17 @@
     margin-top: 5%;
     margin-bottom: 5%;
 }
+.background-quienesomos {
+    background: rgb(222,222,222);
+    background: radial-gradient(circle, rgba(222,222,222,1) 35%, rgba(255,255,255,1) 100%);
+}
 
 .justify-content-evenly {
     margin-bottom: 5%;
     margin-top: 5%;
+    @include respond-to(tablet) {
+    margin-bottom: 0%;  
+    }
 }
 .img-qs {
     display: flex;
@@ -14,6 +21,7 @@
     align-items: center;
     img {
         width: 45px; 
+        margin-top: 3%;
     }
 }
 .titulo-extra {
@@ -22,9 +30,19 @@
             text-align: center;
             text-decoration: none; 
             list-style-type: none;
+            font-size: 17px;
         }
     }
 }
+.parrafo-reservas {
+    p {
+        text-align: center;
+        color: black;
+        line-height: 1.5;
+        font-size: 17px; 
+    }
+}
+
 .copyright {
     font-size: 14px; 
     font-weight: bold;

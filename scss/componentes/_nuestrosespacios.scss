@@ -3,15 +3,24 @@
       text-align: center;
       color: black;
       line-height: 1.5;
+      font-size: 17px;
+      margin-left: 20%;
+      margin-right: 20%;
     }
   }
   
   .titulo-abajo {
-    display: block;
-    text-align: center;
-    margin-top: 60px;
-    margin-bottom: 40px;
-  }
+      h2 {
+        display: block;
+        text-align: center;
+        margin-top: 60px;
+        margin-bottom: 40px; 
+        font-family: "Merienda", cursive;
+        font-size: 2rem;
+        color: #DEDEDE;
+      }
+    }
+
   
   .titulo-principal-1 {
     font-family: "Merienda", cursive;
@@ -22,7 +31,9 @@
   }
 
   .color_fondo_1 {
-    background-color: #35666E;
+    /*background-color: #35666E;*/
+    background: rgb(133,196,189);
+    background: radial-gradient(circle, rgba(133,196,189,1) 31%, rgba(53,102,110,1) 100%);
   }
   .img-espacios {
     div {
@@ -37,8 +48,12 @@
     }
   
     img {
-      width: 50%;
+      width: 40%;
+      @include respond-to (tablet) {
+        width: 80%;
+      }
     }
+
   }
   
   .videos-espacios {
@@ -52,8 +67,12 @@
     }
   
     iframe {
-      width: 50%;
+      width: 40%;
       height: 315px;
+
+      @include respond-to (tablet) {
+        width: 80%;
+      }
     }
   }
   
@@ -64,8 +83,11 @@
         justify-content: space-evenly;
     }
     iframe {
-        width: 50%;
-        border-radius: 10px;
+        width: 40%;
         padding-bottom: 5%;
+
+        @include respond-to (tablet) {
+          width: 80%;
+        }
     }
 }

@@ -237,6 +237,11 @@ footer {
   margin-top: 0%;
 }
 
+.justify-content-evenly {
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
 .color__equipo {
   background-color: #FFFFFF;
 }
@@ -282,19 +287,43 @@ footer {
 
 .card-text {
   text-align: justify;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+.card__body {
+  text-align: center;
+  margin-top: 3%;
+}
+
+.card-img-top {
+  height: 360px;
+}
+
+.card-title {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-family: "Merienda", cursive;
+  font-size: 1.5rem;
 }
 
 .titulo-extra p {
   text-align: center;
   color: black;
   line-height: 1.5;
+  font-size: 17px;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
-.titulo-abajo {
+.titulo-abajo h2 {
   display: block;
   text-align: center;
   margin-top: 60px;
   margin-bottom: 40px;
+  font-family: "Merienda", cursive;
+  font-size: 2rem;
+  color: #DEDEDE;
 }
 
 .titulo-principal-1 {
@@ -306,7 +335,9 @@ footer {
 }
 
 .color_fondo_1 {
-  background-color: #35666E;
+  /*background-color: #35666E;*/
+  background: rgb(133, 196, 189);
+  background: radial-gradient(circle, rgb(133, 196, 189) 31%, rgb(53, 102, 110) 100%);
 }
 
 .img-espacios div {
@@ -321,7 +352,12 @@ footer {
   }
 }
 .img-espacios img {
-  width: 50%;
+  width: 40%;
+}
+@media (max-width: 768px) {
+  .img-espacios img {
+    width: 80%;
+  }
 }
 
 .videos-espacios {
@@ -336,8 +372,13 @@ footer {
   }
 }
 .videos-espacios iframe {
-  width: 50%;
+  width: 40%;
   height: 315px;
+}
+@media (max-width: 768px) {
+  .videos-espacios iframe {
+    width: 80%;
+  }
 }
 
 .videos-de-acceso article {
@@ -346,18 +387,31 @@ footer {
   justify-content: space-evenly;
 }
 .videos-de-acceso iframe {
-  width: 50%;
-  border-radius: 10px;
+  width: 40%;
   padding-bottom: 5%;
+}
+@media (max-width: 768px) {
+  .videos-de-acceso iframe {
+    width: 80%;
+  }
 }
 
 .quienes-somos .container {
   margin-top: 5%;
   margin-bottom: 5%;
 }
+.quienes-somos .background-quienesomos {
+  background: rgb(222, 222, 222);
+  background: radial-gradient(circle, rgb(222, 222, 222) 35%, rgb(255, 255, 255) 100%);
+}
 .quienes-somos .justify-content-evenly {
   margin-bottom: 5%;
   margin-top: 5%;
+}
+@media (max-width: 768px) {
+  .quienes-somos .justify-content-evenly {
+    margin-bottom: 0%;
+  }
 }
 .quienes-somos .img-qs {
   display: flex;
@@ -366,11 +420,19 @@ footer {
 }
 .quienes-somos .img-qs img {
   width: 45px;
+  margin-top: 3%;
 }
 .quienes-somos .titulo-extra ul li {
   text-align: center;
   text-decoration: none;
   list-style-type: none;
+  font-size: 17px;
+}
+.quienes-somos .parrafo-reservas p {
+  text-align: center;
+  color: black;
+  line-height: 1.5;
+  font-size: 17px;
 }
 .quienes-somos .copyright {
   font-size: 14px;
@@ -388,7 +450,6 @@ footer {
 .titulo-principal-2 {
   font-size: 2rem;
   margin-top: 5%;
-  margin-bottom: 5%;
   font-family: "Merienda", cursive;
   display: grid;
   justify-items: center;
@@ -419,6 +480,15 @@ footer {
     justify-items: center;
     display: phone;
   }
+}
+
+.subtitulo-reservas {
+  display: block;
+  text-align: center;
+  margin-top: 60px;
+  margin-bottom: 40px;
+  font-family: "Merienda", cursive;
+  font-size: 1.5rem;
 }
 
 @media (max-width: 1024px) {
@@ -542,8 +612,9 @@ footer {
   margin-left: 20%;
   margin-right: 20%;
   margin-top: 2%;
-  margin-bottom: 3%;
+  margin-bottom: 5%;
   line-height: 1.5;
+  font-size: 17px;
 }
 
 .titulo-principal-1 {
